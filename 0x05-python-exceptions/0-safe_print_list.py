@@ -1,20 +1,26 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
 
-    count = 0
+    index = 0
 
-    for i in range(0, x):
+    while True:
 
         try:
 
-            print("{:d}".format(my_list[i]), end="")
+            if index < x:
 
-            count += 1
+                print(my_list[index], end='')
 
-        except:
+                index += 1
 
-            pass
+            else:
 
-    print()
+                print()
 
-    return 
+                return index
+
+        except IndexError:
+
+            print()
+
+            return index
