@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-def magic_string(H=[]):
+magic_string = __import__('100-magic_string').magic_string
 
-    H += ["Holberton"]
 
-    return (", ".join(H))
+
+for i in range(10):
+
+    print(magic_string())
