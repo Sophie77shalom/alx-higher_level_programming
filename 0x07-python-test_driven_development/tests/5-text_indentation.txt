@@ -1,0 +1,85 @@
+================================
+
+How to use 5-text_indentation.py
+
+===============================
+
+
+
+Import function from  the module:
+
+
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+
+Simple tests
+
+
+
+	>>> text_indentation("No line break")
+
+	No line break
+
+
+
+	>>> text_indentation(".?:")
+
+	.
+
+	<BLANKLINE>
+
+	?
+
+	<BLANKLINE>
+
+	:
+
+	<BLANKLINE>
+
+
+
+	>>> text_indentation("Hello.")
+
+	Hello.
+
+	<BLANKLINE>
+
+
+
+	>>> text_indentation("Wairimu:\nMaringa.")
+
+	Wairimu
+
+	<BLANKLINE>
+
+	<BLANKLINE>
+
+	Maringa.
+
+	<BLANKLINE>
+
+
+
+Error tests
+
+
+
+	>>> text_indentation(None)
+
+	Traceback (most recent call last)
+
+	...
+
+	TypeError: text must be a string
+
+
+
+	>>> text_indentation(6)
+
+	Traceback (most recent call last)
+
+	...
+
+	TypeError: text must be a string
