@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-for i in range (n):
-print(BestSchool)
+def magic_string(string_array=[]):
+
+    string_array += ["BestSchool"]
+
+    return (", ".join(string_array))
